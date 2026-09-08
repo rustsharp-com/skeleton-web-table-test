@@ -1,15 +1,16 @@
 # Reconstructed C# / Rust table trial
 
-Stage 1/6: **0.0.0**, demonstration date **2023-06**.
+Stage 2/6: **1.0.0**, demonstration date **2024-06**.
 These dates and versions are simulated, not verified historical releases.
 Git commit timestamps record the actual publication time.
 
 | Version | Demonstration month | Added capability |
 |---|---|---|
 | 0.0.0 | 2023-06 | Text and numeric planes; table identity |
+| 1.0.0 | 2024-06 | Row/column metadata and style references |
 
-This stage contains 4 independent C#/Rust bindings in horizontal and
-vertical layouts, with 16 required directed source-to-target pairs.
+This stage contains 8 independent C#/Rust bindings in horizontal and
+vertical layouts, with 64 required directed source-to-target pairs.
 GitHub Actions runs 16 environments: Linux/Windows, .NET 8/10, Debug/Release,
 and Rust 1.85/stable. Each environment uses 1,000 valid and 1,000 invalid seeded
 inputs, fixed golden cases, return trips, available-version chains and mutation checks.

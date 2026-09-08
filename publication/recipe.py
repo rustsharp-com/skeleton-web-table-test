@@ -26,7 +26,7 @@ def export(source, output):
         hashes = {}
         def take(relative):
             data = (demo / relative).read_bytes()
-            files[relative] = data
+            files[relative] = data.replace(b'\r\n', b'\n')
             hashes['prototypes/skeletons/skeleton-1/' + relative] = sha(data)
         for relative in ['tools/evolution.py', 'tools/evolution_scaffold.py', 'tools/test_evolution.py', 'tools/parity.py', 'tools/test_parity.py', 'evolution/templates/Adapter.cs', 'evolution/templates/adapter.rs', 'evolution/fixtures/corpus.json']:
             take(relative)
@@ -46,6 +46,7 @@ def export(source, output):
         files['tools/ci_summary.py'] = SUMMARY.encode()
         files['.github/workflows/evolution.yml'] = workflow.encode()
         files['.gitignore'] = b'**/bin/\n**/obj/\n**/target/\n**/__pycache__/\nreports/\n'
+        files['.gitattributes'] = b'* text eol=lf\n'
         files['publication/recipe.py'] = recipe
         version = selected[-1]['version']
         date = selected[-1]['date']

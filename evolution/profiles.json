@@ -7,6 +7,12 @@
       "date": "2023-06",
       "level": 0,
       "adds": "Text and numeric planes; table identity"
+    },
+    {
+      "version": "1.0.0",
+      "date": "2024-06",
+      "level": 1,
+      "adds": "Row/column metadata and style references"
     }
   ]
 }
