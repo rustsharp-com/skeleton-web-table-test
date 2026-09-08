@@ -1,0 +1,6 @@
+{
+  "version": "3.3.0",
+  "date": "2026-09",
+  "level": 5,
+  "adds": "Sizing expressions, priorities, visibility and nested extension preservation"
+}
