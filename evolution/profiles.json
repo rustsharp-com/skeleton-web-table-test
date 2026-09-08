@@ -13,6 +13,12 @@
       "date": "2024-06",
       "level": 1,
       "adds": "Row/column metadata and style references"
+    },
+    {
+      "version": "2.0.0",
+      "date": "2025-06",
+      "level": 2,
+      "adds": "Sparse cells, formulas, formats, type hints and merge geometry"
     }
   ]
 }
