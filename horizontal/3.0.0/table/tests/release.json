@@ -1,0 +1,6 @@
+{
+  "version": "3.0.0",
+  "date": "2026-06",
+  "level": 3,
+  "adds": "Typed stylebook validation and root extension preservation; reject retired CSS books"
+}
