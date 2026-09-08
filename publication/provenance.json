@@ -6,7 +6,7 @@
   "demonstration_date": "2026-09",
   "source_commit": "9e51dc4fde5600ea88fcaae4ee78d1f5f15aac31",
   "source_capture": "working-tree bytes verified by input hashes; exporter is a new central file",
-  "recipe_sha256": "5e045e03401c411629bbdc19297259221b0edd692d4dbc9ac2e9a95f9dccbd66",
+  "recipe_sha256": "bfe876f2e514521f25c2f24474c1270576f193bdab446b877baeb34f79d4f2e3",
   "source_files_sha256": {
     "prototypes/skeletons/skeleton-1/tools/evolution.py": "3c13c56a75ffb992886b92ab594fdb6d800394ff3a7b969152d4f0b865bc3433",
     "prototypes/skeletons/skeleton-1/tools/evolution_scaffold.py": "6d26ea38f9f3de87765ff17365aba0732061cfbdf1d401314fb12680079dd8a7",
@@ -270,10 +270,10 @@
     "vertical/3.3.0/tests/table/corpus.json": "95268ae4a3c0ad37d299fb8b7abe02b23cb719cda22e7576c653cceba041d2df",
     "vertical/3.3.0/tests/table/release.json": "e178505b783efef559e27e51714f6e88443847ad7bcc739344c31aa5c684ca20",
     "tools/ci_summary.py": "d241228dcde15df4e5f229b051950dfa25c5a57b2dcd5f6a16d1fd97a4885cfe",
-    ".github/workflows/evolution.yml": "1bc559e3fb0d7fd9fc3ba57fffe0956f183da4dc72db00fada16cecc0eb532d7",
+    ".github/workflows/evolution.yml": "dece996ca46e73a4f7ac5b2338d2482094445097e609266d1ee9cae155960082",
     ".gitignore": "1e58e33f4fc9adfc03f59cf5a773d4ae14c30207e5e25c750ca9ab56af61fef0",
     ".gitattributes": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
-    "publication/recipe.py": "5e045e03401c411629bbdc19297259221b0edd692d4dbc9ac2e9a95f9dccbd66",
+    "publication/recipe.py": "bfe876f2e514521f25c2f24474c1270576f193bdab446b877baeb34f79d4f2e3",
     "README.md": "21812530d0a5ab1cdcfefff1248c0f20fc31955a0cc5114fcf6f957d09b51ffc"
   }
 }

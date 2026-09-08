@@ -16,6 +16,7 @@ def export(source, output):
     profiles = json.loads((demo / 'evolution/profiles.json').read_text())
     workflow_path = next((source / '.github/workflows').glob('*.yml'))
     workflow = workflow_path.read_text().replace('prototypes/skeletons/skeleton-1/', '')
+    workflow = workflow.replace('      - name: Verify frozen generated bindings', '      - name: Initialize .NET before parallel builds\n        run: dotnet new console --no-restore --output "${{ runner.temp }}/dotnet-first-use"\n      - name: Verify frozen generated bindings')
     workflow = workflow.replace('      - uses: actions/upload-artifact@v4', '      - name: Publish coverage summary\n        if: always()\n        run: python tools/ci_summary.py\n      - uses: actions/upload-artifact@v4')
     for number in range(1, 7):
         stage = output / f'stage-{number}'

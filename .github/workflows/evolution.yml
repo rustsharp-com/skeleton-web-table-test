@@ -29,6 +29,8 @@ jobs:
           python-version: '3.12'
       - name: Set up Rust
         run: rustup toolchain install ${{ matrix.rust }} --profile minimal
+      - name: Initialize .NET before parallel builds
+        run: dotnet new console --no-restore --output "${{ runner.temp }}/dotnet-first-use"
       - name: Verify frozen generated bindings
         run: python tools/evolution_scaffold.py --check
       - name: Test harness failure detection
