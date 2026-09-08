@@ -1,0 +1,3352 @@
+[
+  {
+    "id": "empty-table",
+    "table": {},
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "empty-planes",
+    "table": {
+      "stringValues": [],
+      "numericValues": []
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [],
+          "numericValues": []
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [],
+          "numericValues": []
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [],
+          "numericValues": []
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [],
+          "numericValues": []
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [],
+          "numericValues": []
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [],
+          "numericValues": []
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "null-and-empty-string",
+    "table": {
+      "stringValues": [
+        [
+          null,
+          "",
+          "é 日本語 🦀 <>&"
+        ]
+      ],
+      "numericValues": [
+        [
+          null,
+          0,
+          -1.25
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [
+            [
+              null,
+              "",
+              "é 日本語 🦀 <>&"
+            ]
+          ],
+          "numericValues": [
+            [
+              null,
+              0,
+              -1.25
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [
+            [
+              null,
+              "",
+              "é 日本語 🦀 <>&"
+            ]
+          ],
+          "numericValues": [
+            [
+              null,
+              0,
+              -1.25
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [
+            [
+              null,
+              "",
+              "é 日本語 🦀 <>&"
+            ]
+          ],
+          "numericValues": [
+            [
+              null,
+              0,
+              -1.25
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [
+            [
+              null,
+              "",
+              "é 日本語 🦀 <>&"
+            ]
+          ],
+          "numericValues": [
+            [
+              null,
+              0,
+              -1.25
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [
+            [
+              null,
+              "",
+              "é 日本語 🦀 <>&"
+            ]
+          ],
+          "numericValues": [
+            [
+              null,
+              0,
+              -1.25
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stringValues": [
+            [
+              null,
+              "",
+              "é 日本語 🦀 <>&"
+            ]
+          ],
+          "numericValues": [
+            [
+              null,
+              0,
+              -1.25
+            ]
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "numeric-boundaries",
+    "table": {
+      "numericValues": [
+        [
+          9007199254740991,
+          -9007199254740991,
+          1e-100,
+          1e+100,
+          0.0,
+          -0.0
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {
+          "numericValues": [
+            [
+              9007199254740991,
+              -9007199254740991,
+              1e-100,
+              1e+100,
+              0.0,
+              -0.0
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "numericValues": [
+            [
+              9007199254740991,
+              -9007199254740991,
+              1e-100,
+              1e+100,
+              0.0,
+              -0.0
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "numericValues": [
+            [
+              9007199254740991,
+              -9007199254740991,
+              1e-100,
+              1e+100,
+              0.0,
+              -0.0
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "numericValues": [
+            [
+              9007199254740991,
+              -9007199254740991,
+              1e-100,
+              1e+100,
+              0.0,
+              -0.0
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "numericValues": [
+            [
+              9007199254740991,
+              -9007199254740991,
+              1e-100,
+              1e+100,
+              0.0,
+              -0.0
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "numericValues": [
+            [
+              9007199254740991,
+              -9007199254740991,
+              1e-100,
+              1e+100,
+              0.0,
+              -0.0
+            ]
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "identity",
+    "table": {
+      "tableId": "sales-2026",
+      "tableName": "Sales",
+      "title": "Sales by region"
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {
+          "tableId": "sales-2026",
+          "tableName": "Sales",
+          "title": "Sales by region"
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "tableId": "sales-2026",
+          "tableName": "Sales",
+          "title": "Sales by region"
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "tableId": "sales-2026",
+          "tableName": "Sales",
+          "title": "Sales by region"
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "tableId": "sales-2026",
+          "tableName": "Sales",
+          "title": "Sales by region"
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "tableId": "sales-2026",
+          "tableName": "Sales",
+          "title": "Sales by region"
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "tableId": "sales-2026",
+          "tableName": "Sales",
+          "title": "Sales by region"
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "omit-null",
+    "table": {
+      "tableId": null,
+      "numericValues": null
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/numericValues",
+          "/tableId"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/numericValues",
+          "/tableId"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/numericValues",
+          "/tableId"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/numericValues",
+          "/tableId"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/numericValues",
+          "/tableId"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/numericValues",
+          "/tableId"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "metadata",
+    "table": {
+      "columns": [
+        {
+          "id": "qty",
+          "header": "Quantity",
+          "typeHint": "int",
+          "width": "120px",
+          "alignment": "right"
+        }
+      ],
+      "rows": [
+        {
+          "id": "total",
+          "header": "Total",
+          "height": "24px"
+        }
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/columns",
+          "/rows"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "id": "qty",
+              "header": "Quantity",
+              "typeHint": "int",
+              "width": "120px",
+              "alignment": "right"
+            }
+          ],
+          "rows": [
+            {
+              "id": "total",
+              "header": "Total",
+              "height": "24px"
+            }
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "id": "qty",
+              "header": "Quantity",
+              "typeHint": "int",
+              "width": "120px",
+              "alignment": "right"
+            }
+          ],
+          "rows": [
+            {
+              "id": "total",
+              "header": "Total",
+              "height": "24px"
+            }
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "id": "qty",
+              "header": "Quantity",
+              "typeHint": "int",
+              "width": "120px",
+              "alignment": "right"
+            }
+          ],
+          "rows": [
+            {
+              "id": "total",
+              "header": "Total",
+              "height": "24px"
+            }
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "id": "qty",
+              "header": "Quantity",
+              "typeHint": "int",
+              "width": "120px",
+              "alignment": "right"
+            }
+          ],
+          "rows": [
+            {
+              "id": "total",
+              "header": "Total",
+              "height": "24px"
+            }
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "id": "qty",
+              "header": "Quantity",
+              "typeHint": "int",
+              "width": "120px",
+              "alignment": "right"
+            }
+          ],
+          "rows": [
+            {
+              "id": "total",
+              "header": "Total",
+              "height": "24px"
+            }
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "style-plane",
+    "table": {
+      "styleMatrix": [
+        [
+          "header",
+          "money"
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/styleMatrix"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "styleMatrix": [
+            [
+              "header",
+              "money"
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "styleMatrix": [
+            [
+              "header",
+              "money"
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "styleMatrix": [
+            [
+              "header",
+              "money"
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "styleMatrix": [
+            [
+              "header",
+              "money"
+            ]
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "styleMatrix": [
+            [
+              "header",
+              "money"
+            ]
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "formula-and-format",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": 0,
+            "colIndex": 0,
+            "formula": "SUM(B2:B4)",
+            "valueNumeric": 1234.5,
+            "formatString": "#,##0.00",
+            "styleKey": "money"
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "formula": "SUM(B2:B4)",
+                "valueNumeric": 1234.5,
+                "formatString": "#,##0.00",
+                "styleKey": "money"
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "formula": "SUM(B2:B4)",
+                "valueNumeric": 1234.5,
+                "formatString": "#,##0.00",
+                "styleKey": "money"
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "formula": "SUM(B2:B4)",
+                "valueNumeric": 1234.5,
+                "formatString": "#,##0.00",
+                "styleKey": "money"
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "formula": "SUM(B2:B4)",
+                "valueNumeric": 1234.5,
+                "formatString": "#,##0.00",
+                "styleKey": "money"
+              }
+            ]
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "date-boolean-types",
+    "table": {
+      "sparseOverrideTypes": {
+        "0:0": "date",
+        "0:1": "boolean"
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverrideTypes"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverrideTypes"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverrideTypes": {
+            "0:0": "date",
+            "0:1": "boolean"
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverrideTypes": {
+            "0:0": "date",
+            "0:1": "boolean"
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverrideTypes": {
+            "0:0": "date",
+            "0:1": "boolean"
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverrideTypes": {
+            "0:0": "date",
+            "0:1": "boolean"
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "valid-merge",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": 0,
+            "colIndex": 0,
+            "rowSpan": 2,
+            "colSpan": 3
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "rowSpan": 2,
+                "colSpan": 3
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "rowSpan": 2,
+                "colSpan": 3
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "rowSpan": 2,
+                "colSpan": 3
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "rowSpan": 2,
+                "colSpan": 3
+              }
+            ]
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "stylebook",
+    "table": {
+      "stylebook": {
+        "header": {
+          "weight": 700,
+          "align": "center"
+        },
+        "money": {
+          "numFormat": "£#,##0.00;[Red]-£#,##0.00"
+        }
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "stylebook": {
+            "header": {
+              "weight": 700,
+              "align": "center"
+            },
+            "money": {
+              "numFormat": "£#,##0.00;[Red]-£#,##0.00"
+            }
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stylebook": {
+            "header": {
+              "weight": 700,
+              "align": "center"
+            },
+            "money": {
+              "numFormat": "£#,##0.00;[Red]-£#,##0.00"
+            }
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "stylebook": {
+            "header": {
+              "weight": 700,
+              "align": "center"
+            },
+            "money": {
+              "numFormat": "£#,##0.00;[Red]-£#,##0.00"
+            }
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "font-config",
+    "table": {
+      "fontConfig": {
+        "header": "Arial",
+        "body": "Calibri",
+        "numeric": "Consolas"
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/fontConfig"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/fontConfig"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/fontConfig"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "fontConfig": {
+            "header": "Arial",
+            "body": "Calibri",
+            "numeric": "Consolas"
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "fontConfig": {
+            "header": "Arial",
+            "body": "Calibri",
+            "numeric": "Consolas"
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "fontConfig": {
+            "header": "Arial",
+            "body": "Calibri",
+            "numeric": "Consolas"
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "image-registry",
+    "table": {
+      "imageManager": {
+        "logo": {
+          "id": "logo",
+          "kind": "raster",
+          "encoding": "base64",
+          "mimeType": "image/png",
+          "data": "AA==",
+          "width": 24,
+          "height": 24
+        }
+      },
+      "cellBackgroundImageRefs": {
+        "0:0": "logo"
+      },
+      "cellIds": {
+        "0:0": "logo-cell"
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/cellBackgroundImageRefs",
+          "/cellIds",
+          "/imageManager"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/cellBackgroundImageRefs",
+          "/cellIds",
+          "/imageManager"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/cellBackgroundImageRefs",
+          "/cellIds",
+          "/imageManager"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "imageManager": {
+            "logo": {
+              "id": "logo",
+              "kind": "raster",
+              "encoding": "base64",
+              "mimeType": "image/png",
+              "data": "AA==",
+              "width": 24,
+              "height": 24
+            }
+          },
+          "cellBackgroundImageRefs": {
+            "0:0": "logo"
+          },
+          "cellIds": {
+            "0:0": "logo-cell"
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "imageManager": {
+            "logo": {
+              "id": "logo",
+              "kind": "raster",
+              "encoding": "base64",
+              "mimeType": "image/png",
+              "data": "AA==",
+              "width": 24,
+              "height": 24
+            }
+          },
+          "cellBackgroundImageRefs": {
+            "0:0": "logo"
+          },
+          "cellIds": {
+            "0:0": "logo-cell"
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "imageManager": {
+            "logo": {
+              "id": "logo",
+              "kind": "raster",
+              "encoding": "base64",
+              "mimeType": "image/png",
+              "data": "AA==",
+              "width": 24,
+              "height": 24
+            }
+          },
+          "cellBackgroundImageRefs": {
+            "0:0": "logo"
+          },
+          "cellIds": {
+            "0:0": "logo-cell"
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "data-bars",
+    "table": {
+      "dataBarScale": {
+        "min": -100,
+        "max": 100,
+        "zero": 0
+      },
+      "cellDataBars": {
+        "0:0": [
+          {
+            "start": 0,
+            "end": 42,
+            "color": "#00ff00"
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/cellDataBars",
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/cellDataBars",
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/cellDataBars",
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "dataBarScale": {
+            "min": -100,
+            "max": 100,
+            "zero": 0
+          },
+          "cellDataBars": {
+            "0:0": [
+              {
+                "start": 0,
+                "end": 42,
+                "color": "#00ff00"
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "dataBarScale": {
+            "min": -100,
+            "max": 100,
+            "zero": 0
+          },
+          "cellDataBars": {
+            "0:0": [
+              {
+                "start": 0,
+                "end": 42,
+                "color": "#00ff00"
+              }
+            ]
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "dataBarScale": {
+            "min": -100,
+            "max": 100,
+            "zero": 0
+          },
+          "cellDataBars": {
+            "0:0": [
+              {
+                "start": 0,
+                "end": 42,
+                "color": "#00ff00"
+              }
+            ]
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "capture-chain",
+    "table": {
+      "captureTokens": [
+        {
+          "name": "total",
+          "type": "number",
+          "anchor": "inline",
+          "optional": false,
+          "driftTolerant": true,
+          "valueRef": {
+            "chain": [
+              {
+                "strategy": "headerText",
+                "match": "Total"
+              },
+              {
+                "strategy": "future",
+                "selector": {
+                  "v": 2
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/captureTokens"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/captureTokens"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/captureTokens"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "captureTokens": [
+            {
+              "name": "total",
+              "type": "number",
+              "anchor": "inline",
+              "optional": false,
+              "driftTolerant": true,
+              "valueRef": {
+                "chain": [
+                  {
+                    "strategy": "headerText",
+                    "match": "Total"
+                  },
+                  {
+                    "strategy": "future",
+                    "selector": {
+                      "v": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "captureTokens": [
+            {
+              "name": "total",
+              "type": "number",
+              "anchor": "inline",
+              "optional": false,
+              "driftTolerant": true,
+              "valueRef": {
+                "chain": [
+                  {
+                    "strategy": "headerText",
+                    "match": "Total"
+                  },
+                  {
+                    "strategy": "future",
+                    "selector": {
+                      "v": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "captureTokens": [
+            {
+              "name": "total",
+              "type": "number",
+              "anchor": "inline",
+              "optional": false,
+              "driftTolerant": true,
+              "valueRef": {
+                "chain": [
+                  {
+                    "strategy": "headerText",
+                    "match": "Total"
+                  },
+                  {
+                    "strategy": "future",
+                    "selector": {
+                      "v": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "visibility",
+    "table": {
+      "hiddenColumns": [
+        1,
+        0
+      ],
+      "hiddenRows": [
+        0
+      ],
+      "columnPriority": [
+        0,
+        1,
+        2
+      ],
+      "rowPriority": [
+        0
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/columnPriority",
+          "/hiddenColumns",
+          "/hiddenRows",
+          "/rowPriority"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/columnPriority",
+          "/hiddenColumns",
+          "/hiddenRows",
+          "/rowPriority"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/columnPriority",
+          "/hiddenColumns",
+          "/hiddenRows",
+          "/rowPriority"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "hiddenColumns": [
+            1,
+            0
+          ],
+          "hiddenRows": [
+            0
+          ],
+          "columnPriority": [
+            0,
+            1,
+            2
+          ],
+          "rowPriority": [
+            0
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "hiddenColumns": [
+            1,
+            0
+          ],
+          "hiddenRows": [
+            0
+          ],
+          "columnPriority": [
+            0,
+            1,
+            2
+          ],
+          "rowPriority": [
+            0
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "hiddenColumns": [
+            1,
+            0
+          ],
+          "hiddenRows": [
+            0
+          ],
+          "columnPriority": [
+            0,
+            1,
+            2
+          ],
+          "rowPriority": [
+            0
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "future-root",
+    "table": {
+      "futureFeature": {
+        "themes": {
+          "nested": "allowed"
+        },
+        "value": 42
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/futureFeature"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/futureFeature"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/futureFeature"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "futureFeature": {
+            "themes": {
+              "nested": "allowed"
+            },
+            "value": 42
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "futureFeature": {
+            "themes": {
+              "nested": "allowed"
+            },
+            "value": 42
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "futureFeature": {
+            "themes": {
+              "nested": "allowed"
+            },
+            "value": 42
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "nested-columns",
+    "table": {
+      "columns": [
+        {
+          "header": "Total",
+          "widthExpr": {
+            "op": "max",
+            "children": [
+              {
+                "value": 120
+              },
+              {
+                "symbol": "content"
+              }
+            ]
+          },
+          "hidden": true,
+          "futureNested": {
+            "v": 1
+          }
+        }
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/columns"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/columns/0/futureNested",
+          "/columns/0/hidden",
+          "/columns/0/widthExpr"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/columns/0/futureNested",
+          "/columns/0/hidden",
+          "/columns/0/widthExpr"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/columns/0/futureNested",
+          "/columns/0/hidden",
+          "/columns/0/widthExpr"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/columns/0/futureNested",
+          "/columns/0/hidden",
+          "/columns/0/widthExpr"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "columns": [
+            {
+              "header": "Total",
+              "widthExpr": {
+                "op": "max",
+                "children": [
+                  {
+                    "value": 120
+                  },
+                  {
+                    "symbol": "content"
+                  }
+                ]
+              },
+              "hidden": true,
+              "futureNested": {
+                "v": 1
+              }
+            }
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "nested-rows",
+    "table": {
+      "rows": [
+        {
+          "header": "Total",
+          "heightExpr": {
+            "op": "max",
+            "children": [
+              {
+                "value": 120
+              },
+              {
+                "symbol": "content"
+              }
+            ]
+          },
+          "hidden": true,
+          "futureNested": {
+            "v": 1
+          }
+        }
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/rows"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "rows": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/rows/0/futureNested",
+          "/rows/0/heightExpr",
+          "/rows/0/hidden"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "rows": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/rows/0/futureNested",
+          "/rows/0/heightExpr",
+          "/rows/0/hidden"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "rows": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/rows/0/futureNested",
+          "/rows/0/heightExpr",
+          "/rows/0/hidden"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "rows": [
+            {
+              "header": "Total"
+            }
+          ]
+        },
+        "lost": [
+          "/rows/0/futureNested",
+          "/rows/0/heightExpr",
+          "/rows/0/hidden"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "rows": [
+            {
+              "header": "Total",
+              "heightExpr": {
+                "op": "max",
+                "children": [
+                  {
+                    "value": 120
+                  },
+                  {
+                    "symbol": "content"
+                  }
+                ]
+              },
+              "hidden": true,
+              "futureNested": {
+                "v": 1
+              }
+            }
+          ]
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "media-math-future-cell",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": 0,
+            "colIndex": 0,
+            "mathTex": "x^2",
+            "mathAst": {
+              "op": "pow",
+              "children": [
+                {
+                  "symbol": "x"
+                },
+                {
+                  "value": 2
+                }
+              ]
+            },
+            "videoRef": "clip",
+            "posterRef": "poster",
+            "futureCell": {
+              "v": 1
+            }
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0
+              }
+            ]
+          }
+        },
+        "lost": [
+          "/sparseOverride/cells/0/futureCell",
+          "/sparseOverride/cells/0/mathAst",
+          "/sparseOverride/cells/0/mathTex",
+          "/sparseOverride/cells/0/posterRef",
+          "/sparseOverride/cells/0/videoRef"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0
+              }
+            ]
+          }
+        },
+        "lost": [
+          "/sparseOverride/cells/0/futureCell",
+          "/sparseOverride/cells/0/mathAst",
+          "/sparseOverride/cells/0/mathTex",
+          "/sparseOverride/cells/0/posterRef",
+          "/sparseOverride/cells/0/videoRef"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "mathTex": "x^2",
+                "mathAst": {
+                  "op": "pow",
+                  "children": [
+                    {
+                      "symbol": "x"
+                    },
+                    {
+                      "value": 2
+                    }
+                  ]
+                },
+                "videoRef": "clip",
+                "posterRef": "poster"
+              }
+            ]
+          }
+        },
+        "lost": [
+          "/sparseOverride/cells/0/futureCell"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "sparseOverride": {
+            "cells": [
+              {
+                "rowIndex": 0,
+                "colIndex": 0,
+                "mathTex": "x^2",
+                "mathAst": {
+                  "op": "pow",
+                  "children": [
+                    {
+                      "symbol": "x"
+                    },
+                    {
+                      "value": 2
+                    }
+                  ]
+                },
+                "videoRef": "clip",
+                "posterRef": "poster",
+                "futureCell": {
+                  "v": 1
+                }
+              }
+            ]
+          }
+        },
+        "lost": []
+      }
+    ]
+  },
+  {
+    "id": "ragged",
+    "table": {
+      "numericValues": [
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      }
+    ]
+  },
+  {
+    "id": "mismatched-planes",
+    "table": {
+      "stringValues": [
+        [
+          "a"
+        ]
+      ],
+      "numericValues": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      }
+    ]
+  },
+  {
+    "id": "numeric-string",
+    "table": {
+      "numericValues": [
+        [
+          "1"
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      }
+    ]
+  },
+  {
+    "id": "numeric-boolean",
+    "table": {
+      "numericValues": [
+        [
+          true
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      }
+    ]
+  },
+  {
+    "id": "text-number",
+    "table": {
+      "stringValues": [
+        [
+          1
+        ]
+      ]
+    },
+    "expected": [
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      },
+      {
+        "ok": false,
+        "error": "cell-type"
+      }
+    ]
+  },
+  {
+    "id": "grid-object",
+    "table": {
+      "numericValues": {}
+    },
+    "expected": [
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      },
+      {
+        "ok": false,
+        "error": "grid-shape"
+      }
+    ]
+  },
+  {
+    "id": "identity-number",
+    "table": {
+      "tableId": 123
+    },
+    "expected": [
+      {
+        "ok": false,
+        "error": "identity"
+      },
+      {
+        "ok": false,
+        "error": "identity"
+      },
+      {
+        "ok": false,
+        "error": "identity"
+      },
+      {
+        "ok": false,
+        "error": "identity"
+      },
+      {
+        "ok": false,
+        "error": "identity"
+      },
+      {
+        "ok": false,
+        "error": "identity"
+      }
+    ]
+  },
+  {
+    "id": "bad-metadata",
+    "table": {
+      "columns": [
+        42
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/columns"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "metadata"
+      },
+      {
+        "ok": false,
+        "error": "metadata"
+      },
+      {
+        "ok": false,
+        "error": "metadata"
+      },
+      {
+        "ok": false,
+        "error": "metadata"
+      },
+      {
+        "ok": false,
+        "error": "metadata"
+      }
+    ]
+  },
+  {
+    "id": "missing-coordinate",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "colIndex": 0
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      }
+    ]
+  },
+  {
+    "id": "negative-coordinate",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": -1,
+            "colIndex": 0
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      }
+    ]
+  },
+  {
+    "id": "coordinate-overflow",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": 2147483648,
+            "colIndex": 0
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      },
+      {
+        "ok": false,
+        "error": "coordinate"
+      }
+    ]
+  },
+  {
+    "id": "zero-span",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": 0,
+            "colIndex": 0,
+            "rowSpan": 0
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "span"
+      },
+      {
+        "ok": false,
+        "error": "span"
+      },
+      {
+        "ok": false,
+        "error": "span"
+      },
+      {
+        "ok": false,
+        "error": "span"
+      }
+    ]
+  },
+  {
+    "id": "span-resource-limit",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": 0,
+            "colIndex": 0,
+            "rowSpan": 100001
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "span"
+      },
+      {
+        "ok": false,
+        "error": "span"
+      },
+      {
+        "ok": false,
+        "error": "span"
+      },
+      {
+        "ok": false,
+        "error": "span"
+      }
+    ]
+  },
+  {
+    "id": "overlapping-merges",
+    "table": {
+      "sparseOverride": {
+        "cells": [
+          {
+            "rowIndex": 0,
+            "colIndex": 0,
+            "colSpan": 2
+          },
+          {
+            "rowIndex": 0,
+            "colIndex": 1,
+            "rowSpan": 2
+          }
+        ]
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverride"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "merge-overlap"
+      },
+      {
+        "ok": false,
+        "error": "merge-overlap"
+      },
+      {
+        "ok": false,
+        "error": "merge-overlap"
+      },
+      {
+        "ok": false,
+        "error": "merge-overlap"
+      }
+    ]
+  },
+  {
+    "id": "unknown-cell-type",
+    "table": {
+      "sparseOverrideTypes": {
+        "0:0": "error"
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverrideTypes"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/sparseOverrideTypes"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "type-hint"
+      },
+      {
+        "ok": false,
+        "error": "type-hint"
+      },
+      {
+        "ok": false,
+        "error": "type-hint"
+      },
+      {
+        "ok": false,
+        "error": "type-hint"
+      }
+    ]
+  },
+  {
+    "id": "bad-weight",
+    "table": {
+      "stylebook": {
+        "header": {
+          "weight": 1001
+        }
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "style"
+      },
+      {
+        "ok": false,
+        "error": "style"
+      },
+      {
+        "ok": false,
+        "error": "style"
+      }
+    ]
+  },
+  {
+    "id": "bad-alignment",
+    "table": {
+      "stylebook": {
+        "header": {
+          "align": "diagonal"
+        }
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/stylebook"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "style"
+      },
+      {
+        "ok": false,
+        "error": "style"
+      },
+      {
+        "ok": false,
+        "error": "style"
+      }
+    ]
+  },
+  {
+    "id": "inverted-scale",
+    "table": {
+      "dataBarScale": {
+        "min": 100,
+        "max": -100
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "dataBarScale": {
+            "min": 100,
+            "max": -100
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": false,
+        "error": "scale"
+      },
+      {
+        "ok": false,
+        "error": "scale"
+      }
+    ]
+  },
+  {
+    "id": "zero-outside-scale",
+    "table": {
+      "dataBarScale": {
+        "min": 1,
+        "max": 2,
+        "zero": 0
+      }
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/dataBarScale"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "dataBarScale": {
+            "min": 1,
+            "max": 2,
+            "zero": 0
+          }
+        },
+        "lost": []
+      },
+      {
+        "ok": false,
+        "error": "scale"
+      },
+      {
+        "ok": false,
+        "error": "scale"
+      }
+    ]
+  },
+  {
+    "id": "duplicate-hidden",
+    "table": {
+      "hiddenColumns": [
+        0,
+        0
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/hiddenColumns"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/hiddenColumns"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/hiddenColumns"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "hiddenColumns": [
+            0,
+            0
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "hiddenColumns": [
+            0,
+            0
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": false,
+        "error": "visibility"
+      }
+    ]
+  },
+  {
+    "id": "negative-hidden",
+    "table": {
+      "hiddenRows": [
+        -1
+      ]
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/hiddenRows"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/hiddenRows"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/hiddenRows"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {
+          "hiddenRows": [
+            -1
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": true,
+        "table": {
+          "hiddenRows": [
+            -1
+          ]
+        },
+        "lost": []
+      },
+      {
+        "ok": false,
+        "error": "visibility"
+      }
+    ]
+  },
+  {
+    "id": "retired-allStylesLight",
+    "table": {
+      "allStylesLight": {}
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesLight"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesLight"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesLight"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      }
+    ]
+  },
+  {
+    "id": "retired-allStylesDark",
+    "table": {
+      "allStylesDark": {}
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesDark"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesDark"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesDark"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      }
+    ]
+  },
+  {
+    "id": "retired-allStylesExtra",
+    "table": {
+      "allStylesExtra": {}
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesExtra"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesExtra"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/allStylesExtra"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      }
+    ]
+  },
+  {
+    "id": "retired-themes",
+    "table": {
+      "themes": {}
+    },
+    "expected": [
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/themes"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/themes"
+        ]
+      },
+      {
+        "ok": true,
+        "table": {},
+        "lost": [
+          "/themes"
+        ]
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      },
+      {
+        "ok": false,
+        "error": "forbidden-key"
+      }
+    ]
+  },
+  {
+    "id": "duplicate-root",
+    "raw": "{\"tableId\":\"a\",\"tableId\":\"b\"}",
+    "expected": [
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      }
+    ]
+  },
+  {
+    "id": "duplicate-nested",
+    "raw": "{\"future\":{\"x\":1,\"x\":2}}",
+    "expected": [
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      }
+    ]
+  },
+  {
+    "id": "nan",
+    "raw": "{\"numericValues\":[[NaN]]}",
+    "expected": [
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      }
+    ]
+  },
+  {
+    "id": "trailing",
+    "raw": "{} trailing",
+    "expected": [
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      }
+    ]
+  },
+  {
+    "id": "truncated",
+    "raw": "{\"tableId\":",
+    "expected": [
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      }
+    ]
+  },
+  {
+    "id": "trailing-comma",
+    "raw": "{\"tableId\":\"x\",}",
+    "expected": [
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      },
+      {
+        "ok": false,
+        "error": "json"
+      }
+    ]
+  },
+  {
+    "id": "null-root",
+    "table": null,
+    "expected": [
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      }
+    ]
+  },
+  {
+    "id": "array-root",
+    "table": [],
+    "expected": [
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      },
+      {
+        "ok": false,
+        "error": "table"
+      }
+    ]
+  }
+]

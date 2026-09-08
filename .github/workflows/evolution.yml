@@ -1,0 +1,51 @@
+name: Reconstructed table evolution
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evolution:
+    name: ${{ matrix.os }} / ${{ matrix.framework }} / ${{ matrix.configuration }} / Rust ${{ matrix.rust }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        framework: [net8.0, net10.0]
+        configuration: [Debug, Release]
+        rust: ['1.85.0', stable]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Set up Rust
+        run: rustup toolchain install ${{ matrix.rust }} --profile minimal
+      - name: Verify frozen generated bindings
+        run: python tools/evolution_scaffold.py --check
+      - name: Test harness failure detection
+        run: python -m unittest discover -s tools -p 'test_*.py'
+      - name: All versions, languages, layouts and return trips
+        env:
+          RUSTUP_TOOLCHAIN: ${{ matrix.rust }}
+        run: python tools/evolution.py --samples 1000 --framework ${{ matrix.framework }} --configuration ${{ matrix.configuration }}
+      - name: Publish coverage summary
+        if: always()
+        run: python tools/ci_summary.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evolution-${{ matrix.os }}-${{ matrix.framework }}-${{ matrix.configuration }}-${{ matrix.rust }}
+          path: |
+            reports/evolution/*.json
+            reports/evolution/junit.xml
+            reports/evolution/builds/*.log
+          if-no-files-found: error
