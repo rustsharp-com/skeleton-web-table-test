@@ -25,6 +25,12 @@
       "date": "2026-06",
       "level": 3,
       "adds": "Typed stylebook validation and root extension preservation; reject retired CSS books"
+    },
+    {
+      "version": "3.2.9",
+      "date": "2026-08",
+      "level": 4,
+      "adds": "Media, math, capture tokens and data bars"
     }
   ]
 }
